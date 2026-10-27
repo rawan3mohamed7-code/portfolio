@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>روان محمد | معرض الأعمال والبورتفوليو</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#181a1e',
+                        cardBg: '#212429',
+                        accentOrange: '#f97316',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Cairo) -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Cairo', sans-serif; background-color: #181a1e; color: #f3f4f6; }
+    </style>
+</head>
+<body class="bg-[#181a1e] text-gray-100 transition-colors duration-300">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#181a1e]/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <span class="text-xl font-bold text-white tracking-wider">إلهام / روان</span>
+            
+            <nav class="hidden md:flex items-center gap-8 font-medium text-gray-300 text-sm">
+                <a href="#hero" class="hover:text-accentOrange transition">الرئيسية</a>
+                <a href="#about" class="hover:text-accentOrange transition">عني</a>
+                <a href="#services" class="hover:text-accentOrange transition">الخدمات</a>
+                <a href="#portfolio" class="hover:text-accentOrange transition">المشاريع</a>
+                <a href="#contact" class="hover:text-accentOrange transition">تواصل معي</a>
+            </nav>
+
+            <div>
+                <a href="https://docs.google.com/document/d/1NzK4KS8KTD1fDitMTlIMHXgfyy_sHJFVUHOlQvr0Om4/edit?usp=drivesdk" target="_blank" class="inline-flex items-center gap-2 bg-accentOrange/10 text-accentOrange border border-accentOrange/30 px-4 py-2 rounded-xl text-xs font-bold hover:bg-accentOrange hover:text-white transition">
+                    <i class="fa-solid fa-file-pdf"></i> استعراض الـ CV
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-32 pb-20 md:pt-44 md:pb-32 min-h-screen flex items-center px-4 relative overflow-hidden bg-gradient-to-b from-[#111315] to-[#181a1e]">
+        <div class="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 text-right z-10">
+                <span class="text-gray-400 font-medium text-lg">مرحباً</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight text-white">أصنع هوية تُرَى، وتجربة تُحَس</h1>
+                <p class="text-gray-400 text-base leading-relaxed">أنا روان محمد متخصصة في تكنولوجيا التعليم والتصميم، أجمع بين الإبداع والبساطة لأحول الأفكار إلى تجربة بصرية حية.</p>
+                <div class="pt-4">
+                    <a href="#portfolio" class="bg-accentOrange hover:bg-accentOrange/90 text-white font-bold py-3 px-8 rounded-xl shadow-lg shadow-accentOrange/20 transition inline-block text-sm">المزيد</a>
+                </div>
+            </div>
+            <!-- صورة الهيرو -->
+            <div class="flex justify-center z-10">
+                <div class="w-72 h-72 md:w-96 md:h-96 rounded-2xl overflow-hidden shadow-2xl border border-gray-800 bg-[#212429]">
+                    <img src="https://i.ibb.co/W4qdzLxX/IMG-20260913-221336-262.webp" alt="روان محمد" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (6 Cards) -->
+    <section id="services" class="py-20 bg-[#181a1e]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-2xl md:text-3xl font-bold mb-3 text-white">الخدمات التي أقدمها</h2>
+                <div class="w-12 h-1 bg-accentOrange mx-auto rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- خدمة 1 -->
+                <div class="p-8 bg-[#212429] rounded-2xl border border-gray-800/60 text-center space-y-3 hover:border-accentOrange/50 transition">
+                    <i class="fa-solid fa-pen-nib text-3xl text-accentOrange mb-2"></i>
+                    <h3 class="text-lg font-bold text-white">تصميم جرافيك</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">تصاميم تعبر وتترك انطباعاً بصرياً قوياً.</p>
+                </div>
+                <!-- خدمة 2 -->
+                <div class="p-8 bg-[#212429] rounded-2xl border border-gray-800/60 text-center space-y-3 hover:border-accentOrange/50 transition">
+                    <i class="fa-solid fa-laptop-code text-3xl text-accentOrange mb-2"></i>
+                    <h3 class="text-lg font-bold text-white">تصميم مواقع</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">مواقع تتميز بسهولة الاستخدام لتمنح تجربة فريدة.</p>
+                </div>
+                <!-- خدمة 3 -->
+                <div class="p-8 bg-[#212429] rounded-2xl border border-gray-800/60 text-center space-y-3 hover:border-accentOrange/50 transition">
+                    <i class="fa-solid fa-mobile-screen text-3xl text-accentOrange mb-2"></i>
+                    <h3 class="text-lg font-bold text-white">تصميم تطبيقات</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">واجهات تطبيقات حديثة تجعل التفاعل سلس.</p>
+                </div>
+                <!-- خدمة 4 -->
+                <div class="p-8 bg-[#212429] rounded-2xl border border-gray-800/60 text-center space-y-3 hover:border-accentOrange/50 transition">
+                    <i class="fa-solid fa-clapperboard text-3xl text-accentOrange mb-2"></i>
+                    <h3 class="text-lg font-bold text-white">موشن جرافيك</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">تحريك الأفكار لتصل الرسالة بذكاء وجاذبية.</p>
+                </div>
+                <!-- خدمة 5 -->
+                <div class="p-8 bg-[#212429] rounded-2xl border border-gray-800/60 text-center space-y-3 hover:border-accentOrange/50 transition">
+                    <i class="fa-solid fa-users-viewfinder text-3xl text-accentOrange mb-2"></i>
+                    <h3 class="text-lg font-bold text-white">تصميم تجربة المستخدم</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">تجارب تلائم احتياجات المستخدم وتُقدم له رحلة مريحة.</p>
+                </div>
+                <!-- خدمة 6 -->
+                <div class="p-8 bg-[#212429] rounded-2xl border border-gray-800/60 text-center space-y-3 hover:border-accentOrange/50 transition">
+                    <i class="fa-solid fa-eye text-3xl text-accentOrange mb-2"></i>
+                    <h3 class="text-lg font-bold text-white">تصميم هوية بصرية</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">هوية تعبر عن روح العلامة وتبقى راسخة في الذاكرة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section (3 Featured Projects) -->
+    <section id="portfolio" class="py-20 bg-[#141619]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-2xl md:text-3xl font-bold mb-3 text-white">احدث المشاريع</h2>
+                <div class="w-12 h-1 bg-accentOrange mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- مشروع 1 -->
+                <div class="bg-[#212429] rounded-2xl overflow-hidden border border-gray-800 flex flex-col justify-between">
+                    <div class="h-48 bg-[#2a2e35] flex items-center justify-center p-4">
+                        <i class="fa-solid fa-laptop text-4xl text-accentOrange"></i>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="text-lg font-bold text-white">موقع شخصي</h3>
+                        <p class="text-gray-400 text-xs leading-relaxed">مواقع ويب حديثة تجمع بين الجمال وسهولة الاستخدام لتقدم تجربة متكاملة للمستخدم.</p>
+                        <a href="https://docs.google.com/document/d/1NzK4KS8KTD1fDitMTlIMHXgfyy_sHJFVUHOlQvr0Om4/edit?usp=drivesdk" target="_blank" class="inline-block bg-accentOrange text-white text-xs font-bold py-2 px-6 rounded-xl mt-2">المزيد</a>
+                    </div>
+                </div>
+
+                <!-- مشروع 2 -->
+                <div class="bg-[#212429] rounded-2xl overflow-hidden border border-gray-800 flex flex-col justify-between">
+                    <div class="h-48 bg-[#2a2e35] flex items-center justify-center p-4">
+                        <i class="fa-solid id-card text-4xl text-accentOrange"></i>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="text-lg font-bold text-white">هوية بصرية</h3>
+                        <p class="text-gray-400 text-xs leading-relaxed">هوية تعبر عن شخصية العلامة التجارية وتمنحها حضوراً مميزاً ومختلفاً عن المنافسين.</p>
+                        <a href="https://docs.google.com/document/d/1NzK4KS8KTD1fDitMTlIMHXgfyy_sHJFVUHOlQvr0Om4/edit?usp=drivesdk" target="_blank" class="inline-block bg-accentOrange text-white text-xs font-bold py-2 px-6 rounded-xl mt-2">المزيد</a>
+                    </div>
+                </div>
+
+                <!-- مشروع 3 -->
+                <div class="bg-[#212429] rounded-2xl overflow-hidden border border-gray-800 flex flex-col justify-between">
+                    <div class="h-48 bg-[#2a2e35] flex items-center justify-center p-4">
+                        <i class="fa-solid fa-mobile-screen-button text-4xl text-accentOrange"></i>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="text-lg font-bold text-white">تطبيق لشركة</h3>
+                        <p class="text-gray-400 text-xs leading-relaxed">واجهات تطبيقات أنيقة وسهلة التفاعل، تمنح المستخدم تجربة مريحة.</p>
+                        <a href="https://docs.google.com/document/d/1NzK4KS8KTD1fDitMTlIMHXgfyy_sHJFVUHOlQvr0Om4/edit?usp=drivesdk" target="_blank" class="inline-block bg-accentOrange text-white text-xs font-bold py-2 px-6 rounded-xl mt-2">المزيد</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-[#181a1e]">
+        <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-2xl md:text-3xl font-bold mb-3 text-white">تواصل معي</h2>
+                <div class="w-12 h-1 bg-accentOrange mx-auto rounded-full"></div>
+            </div>
+            
+            <form action="https://formspree.io/f/rawan3mohamed7@gmail.com" method="POST" class="bg-[#212429] border border-gray-800 p-8 rounded-3xl space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-medium mb-2 text-gray-300">الاسم</label>
+                        <input type="text" name="name" required class="w-full px-4 py-3 rounded-xl border border-gray-700 bg-[#181a1e] text-white text-sm focus:outline-none focus:border-accentOrange transition">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium mb-2 text-gray-300">البريد الإلكتروني</label>
+                        <input type="email" name="email" required class="w-full px-4 py-3 rounded-xl border border-gray-700 bg-[#181a1e] text-white text-sm focus:outline-none focus:border-accentOrange transition">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs font-medium mb-2 text-gray-300">الرسالة</label>
+                    <textarea name="message" rows="4" required class="w-full px-4 py-3 rounded-xl border border-gray-700 bg-[#181a1e] text-white text-sm focus:outline-none focus:border-accentOrange transition"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-accentOrange hover:bg-accentOrange/90 text-white font-bold py-3 px-8 rounded-xl text-sm transition shadow-lg shadow-accentOrange/20">إرسال الرسالة</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>ٍ
